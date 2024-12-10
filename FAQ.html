@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soha's Dental Services | FAQ</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Parkinsans:wght@300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="FAQStyle.css">
+</head>
+<body>
+    <header class =NavBar>
+        <img class="Logo" src="LogoFinalFinal.png" width="250px" height="90px" alt="Our Logo" />
+        <nav>
+            <ul class="Pages">
+                <li> <a href="HomePage.html"> Home </a></li>
+                <li> <a href="about.html">About </a></li>
+                <li> <a href="DentalTechnology.html"> Dental Technology </a></li>
+                <li> <a href="FAQ.html"> FAQ </a></li>
+                
+            </ul>
+    
+        </nav>
+        <button onclick="showForm()">Book Now</button>
+        <div id="booking-form" style="display: none;">
+           
+            <h1>Book an Appointment</h1>
+            <form action="submit-form.php" method="POST">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+        
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone"  required><br><br>
+        
+                <label for="date">Preferred Date:</label><br>
+                <input type="date" id="date" name="date" required><br><br>
+        
+                <button type="submit">Submit</button>
+            </form>
+          
+            <script>
+                
+                document.getElementById("booking-form").addEventListener("submit", function(event){
+                    event.preventDefault(); 
+                    alert("Thank you for your booking with Smile Essence Clinic,We are looking forward to your experience soon.");
+                });
+            </script>
+
+    </header> 
+   
+    
+    <section class="accordion">
+        <div class="contentBx">
+            <div class="label">Can you help with dental anxiety?</div>
+            <div class="content">
+                <p>
+                    Absolutely! Dental anxiety is a common problem for patients of all ages and walks of life. In fact almost 40% of people have some form of dental anxiety.
+                     We go above and beyond to help you feel comfortable and cared for before, during, and after your appointment.
+                      Our staff is compassionate, warm, and dedicated to prioritizing the experience of our patients.
+                    We provide state-of-the-art procedures and are always transparent and thoughtful with our patients. 
+                    We also offer soothing amenities including essential oils, warm compresses, and more to provide a relaxing environment.
+                </p>
+            </div>
+        </div>
+        
+        <div class="contentBx">
+            <div class="label">Are check-ins quick?</div>
+            <div class="content">
+                <p>
+                    Yes! Our wait times usually clock in at around five minutes because we want to make the check-in process as
+                     easy and stress-free as possible. At our office, you can use one of our iPads in the waiting room to check in 
+                     and fill
+                     out patient forms before your appointment or 
+                    complete it all on your phone prior to your arrival.
+
+                </p>
+            </div>
+        </div>
+        
+        <div class="contentBx">
+            <div class="label">Do you do dental surgery?</div>
+            <div class="content">
+                <p>
+                    We do. In addition to our comprehensive range of general and cosmetic dental services, 
+                    we also perform surgical procedures when necessary. These include: implants, tooth extractions, 
+                    root canals, bone grafts, implant-supported dentures, and dental bridges. We aim to provide
+                     a comfortable, pain-free experience and great, long-lasting results whenever you require 
+                     a surgical procedure.
+                </p>
+            </div>
+        </div>
+        
+        <div class="contentBx">
+            <div class="label">How often are dental cleanings and exams recommended?</div>
+            <div class="content">
+                <p>
+                    We highly recommend that you visit Village Dental every 6 months for routine cleanings and exams.
+                    
+                    These routine visits will help us catch issues as soon as they begin to develop so we can treat the issue and keep your mouth healthy.
+                     In addition, any time you experience pain or discomfort related to your teeth, gums, jaw, or mouth, we recommend making an appointment as soon as possible.
+                </p>
+            </div>
+        </div>
+        
+        <div class="contentBx">
+            <div class="label">How much does treatment cost?</div>
+            <div class="content">
+                <p>
+                    At Smile Essence Clinic, we’re always transparent about how much specific treatments and procedures cost. 
+                    We always recommend that you meet with our doctors, who will listen to your concerns, answer your questions, 
+                    and provide you with a detailed treatment plan with options for you to consider. 
+                    This allows you to make the best decision depending on your situation and your budget and financing options
+                </p>
+            </div>
+        </div>
+        
+        <div class="contentBx">
+            <div class="label">Do you do cosmetic dentistry?</div>
+            <div class="content">
+                <p>
+                    we offer in-office procedures for virtually any cosmetic dental concern you have. 
+                    From teeth whitening to botox, to veneers, total smile makeovers, and more, we use advanced 
+                    technology to help you achieve the beautiful smile you’ve always wanted.
+                </p>
+            </div>
+        </div>
+        
+        <div class="contentBx">
+            <div class="label">Can I visit your practice even if I don’t have insurance?</div>
+            <div class="content">
+                <p>
+                    Absolutely! We believe everyone deserves high-quality dental care regardless of whether or not they have dental insurance or their financial situation.
+                     We welcome both insured and uninsured patients.
+                    We are primarily an out-of-network or “fee-for-service” dental-care provider. This allows us to charge a fair, 
+                    fixed rate for procedures rather than having to apply extra fees required by third-party insurance companies. Whatever your situation and budget,
+                     we’re dedicated to providing you with straightforward estimates and helping you navigate any financial obstacles you may be facing
+                </p>
+            </div>
+        </div>
+        
+        <div class="contentBx">
+            <div class="label">Do you treat children at your office?</div>
+            <div class="content">
+                <p>
+                    Of course! Our “Happy Visits” are perfect for kids ages three and up. At these 30-minute appointments,
+                     we take a look at your child’s teeth and work to give them a positive experience and introduce them 
+                     to the importance of dental care.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const accordion=document.getElementsByClassName('contentBx');
+    
+        for(let i=0;i<accordion.length;i++){
+    
+    accordion[i].addEventListener("click",function(){
+    
+        this.classList.toggle("active");
+    })
+        }
+    </script>
+
+
+       
+    <footer>
+        <section class = "FooterUpper">
+                <a id="facebook" href="https://www.facebook.com/share/1BfU8QEwMa/?mibextid=JRoKGi"target="_blank">
+                    <img src="Images/FacebookCircle.svg" width="50px" height="50px" alt="Our Facebook">
+                </a>
+                <a id ="instagram" href="https://www.instagram.com/soha__elnagar?igsh=MTg3aGxuYzdibTdvZg"target="_blank">
+                    <img src="Images/InstagramCircle.svg" width="50px" height="50px" alt="Our Instagram">
+                </a>
+                <a href="https://x.com/sohaelnagar4?s=21&t=-SLZCbh8dkQE82dgtUtmRw"target="_blank">
+                    <img src="Images/TwitterCircle.svg" width="50px" height="50px" alt="Our Twitter">
+                </a>
+        </section>
+        <section class ="FooterMiddle">
+            <div class="Map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2740.078320832485!2d8.0204921!3d46.625214799999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478f994c41c5f6a9%3A0xbb87533010586352!2sGrundstrasse%204%2C%203818%20Grindelwald%2C%20Switzerland!5e0!3m2!1sen!2seg!4v1733494179557!5m2!1sen!2seg"width="1346" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+        <section class="FooterLower">
+            <p>&copy;2018 Dental Clinic | Designed By: <span class = "Designer">Soha Elnagar </span></p>
+            
+        </section>
+    </footer>
+
+    <script>
+        function showForm() {
+            document.getElementById('booking-form').style.display = 'block';
+        }
+    </script>
+
+
+
+</body>
+</html>

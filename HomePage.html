@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soha's Dental Services | Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Parkinsans:wght@300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="HomeStyle.css">
+</head>
+<body>
+    <header class =NavBar>
+        <img class="Logo" src="LogoFinalFinal.png" width="250px" height="90px" alt="Our Logo" />
+        <nav>
+            <ul class="Pages">
+                <li> <a href="HomePage.html"> Home </a></li>
+                <li> <a href="about.html"> About </a></li>
+                <li> <a href="DentalTechnology.html"> Dental Technology </a></li>
+                <li> <a href="FAQ.html"> FAQ </a></li>
+            </ul>
+        </nav>
+       
+
+<button onclick="showForm()">Book Now</button>
+
+<div id="booking-form" style="display: none;">
+       
+            <h1>Book an Appointment</h1>
+            <form action="submit-form.php" method="POST">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+        
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone"  required><br><br>
+        
+                <label for="date">Preferred Date:</label><br>
+                <input type="date" id="date" name="date" required><br><br>
+        
+                <button type="submit">Submit</button>
+            </form>
+            <script>
+                function showForm() {
+                    document.getElementById('booking-form').style.display = 'block';
+                }
+            </script>
+          
+            <script>
+                
+                document.getElementById("booking-form").addEventListener("submit", function(event){
+                    event.preventDefault(); 
+                    alert("Thank you for your booking with Smile Essence Clinic,We are looking forward to your experience soon.");
+                });
+            </script>
+
+    </header> 
+    <section class="Home">
+         <p><b>Smile Essence<br> Clinic</b></strong></b></p>   
+        
+    </section>
+
+    <section class="About">
+        <h2> Our Values</h2>
+        <p>
+            <strong> “ </strong>
+            We believe that with a healthy smile, life is better. 
+            We also see so many people living a life that isn’t their best,
+             because of pain, because of fear and because for so long, they’ve been afraid to smile. 
+             Every day in our practice, we meet patients who are afraid or embarrassed to smile. 
+             We also see patients who have just never liked the appearance of their teeth, 
+             or felt confident in their smile. We want you to know that when you can smile with confidence, 
+             chew comfortably and have a healthy mouth, life is better. 
+             If your smile is holding you back from the life you want, 
+             if you’ve been putting off going to the dentist because of fear or anxiety, 
+             or if you’re simply looking for the perfect dental home for yourself and your family, 
+             you’ve come to the right place. We promise no lectures or judgments ever, 
+             no matter how long it has been, or the condition of your mouth.
+            <strong> “ </strong>
+        </p>
+    </section>
+    <hr>
+    <section class="FirstHome">
+        <div id="Photo1"></div>
+    </section>
+    <section class="SecondHome">
+        <div id="Photo2"></div>
+        <div id="Photo3"></div>
+    </section>
+    <hr>
+    <section class="ThirdHome">
+        <div id="Text1">
+            <h2> Dentistry Like You’ve Never Experienced Before! </h2>
+            <p> You will be more than pleased with the level of service our team provides.
+                Our top priority is to care for each patient as an individual.
+                We get to know each of you personally, and not in a distant manner as if you were another set of teeth,
+                a chart, or just another patient. Every patient at every appointment will have our competent
+                and attentive team giving you the best dental care in a warm and friendly manner.
+                From your very first visit, you will notice the difference.</p>
+        </div>
+        <div id="Photo4"></div>
+    </section>
+
+    <footer>
+        <section class = "FooterUpper">
+                <a id="facebook" href="https://www.facebook.com/share/1BfU8QEwMa/?mibextid=JRoKGi" target="_blank">
+                    <img src="Images/FacebookCircle.svg" width="50px" height="50px" alt="Our Facebook">
+                </a>
+                <a id ="instagram" href="https://www.instagram.com/soha__elnagar?igsh=MTg3aGxuYzdibTdvZg" target="_blank">
+                    <img src="Images/InstagramCircle.svg" width="50px" height="50px" alt="Our Instagram">
+                </a>
+                <a href="https://x.com/sohaelnagar4?s=21&t=-SLZCbh8dkQE82dgtUtmRw"target="_blank">
+                    <img src="Images/TwitterCircle.svg" width="50px" height="50px" alt="Our Twitter">
+                </a>
+        </section>
+        <section class ="FooterMiddle">
+            <div class="Map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2740.078320832485!2d8.0204921!3d46.625214799999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478f994c41c5f6a9%3A0xbb87533010586352!2sGrundstrasse%204%2C%203818%20Grindelwald%2C%20Switzerland!5e0!3m2!1sen!2seg!4v1733494179557!5m2!1sen!2seg" width="1346" height="220"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+        <section class="FooterLower">
+            <p>&copy;2018 Smile Essence Clinic | Designed By: <span class = "Designer">Soha Elnagar </span></p>
+        </section>
+    </footer>
+
+    
+
+</body>
+</html>

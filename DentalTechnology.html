@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soha's Dental Services | Dental Technology</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Parkinsans:wght@300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="DentalTechnologyStyle.css">
+</head>
+<body>
+    <header class =NavBar>
+        <img class="Logo" src="LogoFinalFinal.png" width="250px" height="90px" alt="Our Logo" />
+        <nav>
+            <ul class="Pages">
+                <li> <a href="HomePage.html"> Home </a></li>
+                <li> <a href="about.html">About </a></li>
+                <li> <a href="DentalTechnology.html"> Dental Technology </a></li>
+                <li> <a href="FAQ.html"> FAQ </a></li>
+            </ul>
+        </nav>
+
+        <button onclick="showForm()">Book Now</button>
+
+        <div id="booking-form" style="display: none;">
+               
+                    <h1>Book an Appointment</h1>
+                    <form action="submit-form.php" method="POST">
+                        <label for="name">Name:</label><br>
+                        <input type="text" id="name" name="name" required><br><br>
+                
+                        <label for="email">Email:</label><br>
+                        <input type="email" id="email" name="email" required><br><br>
+        
+                        <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone"  required><br><br>
+                
+                        <label for="date">Preferred Date:</label><br>
+                        <input type="date" id="date" name="date" required><br><br>
+                
+                        <button type="submit">Submit</button>
+                    </form>
+                  
+                    <script>
+                        
+                        document.getElementById("booking-form").addEventListener("submit", function(event){
+                            event.preventDefault(); 
+                            alert("Thank you for your booking with Smile Essence Clinic,We are looking forward to your experience soon.");
+                        });
+                    </script>
+      
+    </header> 
+
+    <div class="hero">
+        <h1 class="main-title">Technology</h1>
+        <h2 class="sub-title">Technology Office</h2>
+    </div>
+    
+    <section class="gallery">
+        <div class="gallery-item">
+            <img src="Tech2.png" alt="Image 1">
+            <h3>3-D CT Scanner</h3>
+            <p>Our practice is proud to be one of the first practices in the region to use 3-D cone beam CT digital imaging technology. 
+                This is essentially a three-dimensional X-ray providing FAR more accurate images than traditional X-rays. 
+                A great advantage of ultra cone beam images in determining diagnoses and evaluating treatment options
+                 is our doctors ability to clearly see your anatomy in 3-D, instead of flat, two-dimensional images.</p>
+        </div>
+        <div class="gallery-item">
+            <img src="Tech3.jpg" alt="Image 2">
+            <h3>Digital Xrays</h3>
+            <p>With digital technology, it is easy to have a panoramic view of your upper and lower jaws in just one shot.
+                 A sensor is placed in your mouth, and immediately, we can view your teeth on our computer screen.
+                 This advanced technology also results in 75% 
+                 less radiation than the nondigital method. No chemicals are used, which makes it a pollution-free process.</p>
+        </div>
+        <div class="gallery-item">
+            <img src="Tech4.jpg" alt="Image 3">
+            <h3>Intra-Oral Camera</h3>
+            <p>With the intra-oral camera, you can have a clear, close-up picture of your teeth.
+               This miniature video camera lets you see for yourself what teeth need treatment and those that are just fine.
+               You will be satisfied as a full participant in your dental health care.</p>
+        </div>
+    </section>
+
+
+    <hr class="divider">
+
+<div class="content-section">
+    <h2 class="main-heading">
+        Enjoy 170 Channels in HD - While Getting Your Teeth Cleaned!</h2>
+    <p class="content-paragraph">
+        We offer a personal entertainment station with over 170 channels in high definition in each treatment room.
+         We are very excited to bring this enjoyment to you. You can watch
+         your favorite shows or sports and catch up on news while having your teeth cleaned or other treatment performed.
+    </p>
+</div>
+
+
+    <footer>
+        <section class = "FooterUpper">
+                <a id="facebook" href="https://www.facebook.com/share/1BfU8QEwMa/?mibextid=JRoKGi"target="_blank">
+                    <img src="Images/FacebookCircle.svg" width="50px" height="50px" alt="Our Facebook">
+                </a>
+                <a id ="instagram" href="https://www.instagram.com/soha__elnagar?igsh=MTg3aGxuYzdibTdvZg"target="_blank">
+                    <img src="Images/InstagramCircle.svg" width="50px" height="50px" alt="Our Instagram">
+                </a>
+                <a href="https://x.com/sohaelnagar4?s=21&t=-SLZCbh8dkQE82dgtUtmRw"target="_blank">
+                    <img src="Images/TwitterCircle.svg" width="50px" height="50px" alt="Our Twitter">
+                </a>
+        </section>
+        <section class ="FooterMiddle">
+            <div class="Map">
+ <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2740.078320832485!2d8.0204921!3d46.625214799999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478f994c41c5f6a9%3A0xbb87533010586352!2sGrundstrasse%204%2C%203818%20Grindelwald%2C%20Switzerland!5e0!3m2!1sen!2seg!4v1733494179557!5m2!1sen!2seg" width="1347" height="220"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+        <section class="FooterLower">
+            <p>&copy;2018 Dental Clinic | Designed By: <span class = "Designer">Soha Elnagar </span></p>
+            
+        </section>
+    </footer>
+    <script>
+        function showForm() {
+            document.getElementById('booking-form').style.display = 'block';
+        }
+    </script>
+
+</body>
+</html>

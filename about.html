@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soha's Dental Services | Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Parkinsans:wght@300..800&display=swap"  width="100" height="100" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+    <link rel="stylesheet" href="about.css">
+</head>
+<body>
+    <header class =NavBar>
+        <img class="Logo" src="LogoFinalFinal.png" width="250px" height="90px" alt="Our Logo" />
+        <nav>
+            <ul class="Pages">
+                <li> <a href="HomePage.html"> Home </a></li>
+                <li> <a href="about.html"> About</a></li>
+                <li> <a href="DentalTechnology.html"> Dental Technology </a></li>
+                <li> <a href="FAQ.html"> FAQ </a></li>
+            </ul>
+        </nav>
+        
+<button onclick="showForm()">Book Now</button>
+
+
+<div id="booking-form" style="display: none;">
+    <h1>Book an Appointment</h1>
+    <form action="submit-form.php" method="POST">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone"  required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="date">Preferred Date:</label><br>
+        <input type="date" id="date" name="date" required><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+    <script>
+                
+        document.getElementById("booking-form").addEventListener("submit", function(event){
+        event.preventDefault(); 
+        alert("Thank you for your booking with Smile Essence Clinic,We are looking forward to your experience soon.");
+        });
+    </script>
+</div>
+    </header> 
+
+    <section class="about-section">
+        <h1>Serving patients with efficiency</h1>
+        <p>We’re a group of energetic, values-driven dental clinicians dedicated to caring for all people — young to young at heart.
+            Since 2018, we’ve been combining exciting technology with a warm and friendly team to deliver exceptional dentistry in Smile Essence Clinic.
+            Find all the dental care you need (and then some) here in our beautiful office, designed for your comfort and rejuvenation.</p>
+        <img src="patient.jpg" alt="About Us Image">
+    </section>
+    <hr>
+
+    <section class="image-content-section">
+        <div class="content-item">
+            <img src="kdr.jpg" alt="Image 1">
+            <div>
+                <h3>Dr.Karim Elnagar</h3>
+                <h4>Why dentistry?</h4>
+                <p>I’m a dentist because it has always been my desire to help people in a healthcare environment.
+                   Dentistry offers the unique opportunity to build lifelong relationships,
+                   while also providing a service that improves people’s quality of life.
+                   I love the art of dentistry, and even more, I love making people smile!</p>
+            </div>
+            <div class="right-section">
+                <h2>Education</h2>
+                <p>-BDS,MSc of Orthodontics Tanta university. <br>      
+                   -Member of Egyptian Society of Implantology. <br>
+                   -Member of American Dental Association of Dental Dshtitics.</p>
+            </div>
+        </div>
+        
+     
+        <div class="content-item">
+            <img src="Dr1.jpg" alt="Image 3">
+            <div>
+                <h3>Dr.Brenna McLain</h3>
+                <h4>Why dentistry?</h4>
+                <p>I chose dentistry because I wanted to follow in my parents’ footsteps. Growing up in their office,
+                    I came to see how dentistry blends art and science in such a beautiful way,
+                    and how it can make a huge impact on people’s health and wellbeing.
+                    I wanted to carry on their legacy and impact my community in a positive and meaningful way.</p>
+            </div>
+            <div class="right-section">
+                <h2>Education</h2>
+                <p>-BS in Physiology and Chemistry, University of Arizona. <br>
+                   -DDS University of Colorado School of Dental Medicine. <br>
+                   -Diplomate American Board of Dental Sleep Medicine.
+                    </p>
+            </div>
+        </div> 
+
+        <div class="content-item">
+            <img src="Dr2.jpg" alt="Image 3">
+            <div>
+                <h3>Dr. Graham Shadwick</h3>
+                <h4>Why dentistry?</h4>
+                <p>I’m a dentist because it has always been my desire to help people in a healthcare environment.
+                    Growing up in my dad’s and uncle’s dental office, I learned early on that dentistry was going to be my path.
+                    I love the relationships we build with our patients and our ability to help them live healthier, better lives.</p>
+            </div>
+            <div class="right-section">
+                <h2>Education</h2>
+                <p>-BA in Medical Humanities, Baylor University.<br>
+                    -DDS University of Oklahoma.<br>
+                    -Residency in Advanced Education in General Dentistry, University of Oklahoma.
+                    </p>
+            </div>
+        </div>
+
+    </section>
+    <footer>
+        <section class = "FooterUpper">
+                <a id="facebook" href="https://www.facebook.com/share/1BfU8QEwMa/?mibextid=JRoKGi"target="_blank">
+                    <img src="Images/FacebookCircle.svg" width="50px" height="50px" alt="Our Facebook">
+                </a>
+                <a id ="instagram" href="https://www.instagram.com/soha__elnagar?igsh=MTg3aGxuYzdibTdvZg"target="_blank">
+                    <img src="Images/InstagramCircle.svg" width="50px" height="50px" alt="Our Instagram">
+                </a>
+                <a href="https://x.com/sohaelnagar4?s=21&t=-SLZCbh8dkQE82dgtUtmRw"target="_blank">
+                    <img src="Images/TwitterCircle.svg" width="50px" height="50px" alt="Our Twitter">
+                </a>
+        </section>
+
+    <section class ="FooterMiddle">
+        <div class="Map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2740.078320832485!2d8.0204921!3d46.625214799999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478f994c41c5f6a9%3A0xbb87533010586352!2sGrundstrasse%204%2C%203818%20Grindelwald%2C%20Switzerland!5e0!3m2!1sen!2seg!4v1733494179557!5m2!1sen!2seg"width="1345" height="190"   style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+    <section class="FooterLower">
+        <p>&copy;2018 Smile Essence Clinic | Designed By: <span class = "Designer">Soha Elnagar </span></p>
+    </section>
+</footer>
+
+<script>
+    function showForm() {
+        document.getElementById('booking-form').style.display = 'block';
+    }
+</script>
+</body>

@@ -1,0 +1,193 @@
+*{
+    font-family: "Parkinsans", 'Times New Roman', Times, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+}
+
+
+li, a, button {
+    font-family: "Parkinsans", 'Times New Roman', Times, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color:#c7dae2;
+    text-decoration: none;
+}
+header.NavBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1px 10%;
+    background-color:#174c5c;
+}
+.Logo{
+    cursor: pointer;
+}
+.Pages{
+    list-style: none;
+}
+.Pages li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+.Pages li a {
+    opacity: 0.7;
+    transition: all 0.5s ease 0s;
+}
+.Pages li a:hover{
+    color:rgba(43, 184, 254, 0.923);
+    opacity: 1;
+}
+button{
+    padding: 9px 25px;
+    background-color: rgba(201, 115, 29, 0.81);
+    color:#c7dae2;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease 0.3s;
+}
+button:hover{
+    background-color:rgba(43, 184, 254, 0.923);
+    transform: scale(1.2);
+}
+
+
+.accordion{
+    color: #174c5c; ;
+    max-width: 800px;
+    margin: auto;
+}
+.accordion .contentBx{
+    position:relative;
+    margin: 10px 20px;
+}
+.accordion .contentBx .label{
+    position: relative;
+    padding:10px;
+    background-color:#174c5c; 
+    color:#c7dae2;
+    cursor:pointer;
+}
+.accordion .contentBx .label::before{
+    content: '+';
+    position: absolute;
+    top:50%;
+    right:20px;
+    transform: translateY(-50%);
+    font-size: 1.5em;
+    transition: transform 0.3s ease;
+}
+
+.accordion .contentBx.active .label::before {
+    content: '-';
+}
+
+
+.accordion .contentBx .content{
+    position: relative;
+    background: whitesmoke;
+   max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease, padding 0.3s ease;
+}
+.accordion .contentBx.active .content {
+    max-height: 300px; 
+    padding: 10px;
+}
+
+
+#booking-form {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 350px;
+    max-height: 670px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#booking-form h1 {
+    text-align: center;
+    color: #287086;
+    margin-bottom: 20px;
+}
+
+#booking-form label {
+    font-size: 15px;
+    font-weight: bold;
+    color: #2f6677;;
+    display: block;
+    margin-bottom: 2px;
+}
+
+#booking-form input[type="text"],
+#booking-form input[type="email"],
+#booking-form input[type="tel"],
+#booking-form input[type="date"]
+{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 2px;
+    border: 1px solid#498ca0;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+#booking-form button {
+    padding: 9px 25px;
+    background-color: rgba(201, 115, 29, 0.81);
+    color:#c7dae2;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease 0.3s ease;
+}
+#booking-form button:hover{
+    background-color:rgba(43, 184, 254, 0.923);
+    transform: scale(1.2);
+}
+
+footer{
+    padding-top: 7px;
+    background-color:#174c5c;
+}
+Section.FooterUpper{
+    display: flex;
+    justify-content: center;
+}
+.FooterUpper img{
+    transition: all 0.3s ease 0s;
+    margin-left: 40px;
+    margin-right: 40px;
+    border-radius: 50%;
+    opacity: 0.7;
+}
+.FooterUpper img:hover{
+    transform: scale(1.2);
+    background-color:rgba(43, 184, 254, 0.923);
+    opacity: 1;
+}
+Section.FooterMiddle{
+    margin-top: 5px;
+    display: flex;
+}
+Section.FooterLower{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10%;
+    background-color:#0a1f25;
+}
+.FooterLower p{
+    color:#c7dae2;
+    text-align: left;
+}

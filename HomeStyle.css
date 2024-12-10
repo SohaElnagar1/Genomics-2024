@@ -1,0 +1,283 @@
+*{
+    font-family: "Parkinsans", 'Times New Roman', Times, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+<!--Styling For The Navigation Bar-->
+
+li, a, button {
+    font-family: "Parkinsans", 'Times New Roman', Times, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color:#c7dae2;
+    text-decoration: none;
+}
+header.NavBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1px 10%;
+    background-color:#174c5c;
+}
+.Logo{
+    cursor: pointer;
+}
+.Pages{
+    list-style: none;
+}
+.Pages li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+.Pages li a {
+    opacity: 0.7;
+    transition: all 0.5s ease 0s;
+}
+.Pages li a:hover{
+    color:rgba(43, 184, 254, 0.923);
+    opacity: 1;
+}
+button{
+    padding: 9px 25px;
+    background-color: rgba(201, 115, 29, 0.81);
+    color:#c7dae2;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease 0.3s;
+}
+button:hover{
+    background-color:rgba(43, 184, 254, 0.923);
+    transform: scale(1.2);
+}
+
+.Home{
+    display: flex;
+    position: relative;
+    background-image: url('Images/x1.jpg');
+    color:#0a333f;
+    padding:15%;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+.Home p{
+    font-family: adobe-garamond-pro;
+    font-style: italic;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 80px;
+    letter-spacing: 1px;
+    text-transform: none;
+    line-height: 1.5em;
+    color:#195366;
+    margin-left: 20px;
+    position: relative;
+          top: -90px; 
+          left: 55px; 
+    
+    }
+
+
+.About{
+    margin-bottom: 1%;
+    margin-top: 1%;
+    margin-left: 26%;
+    margin-right: 26%;
+}
+.About p{
+    color:  #195366;
+    font-family: "Parkinsans", 'Times New Roman', Times, sans-serif;
+    font-size: 18px;
+    padding-left:20px;
+    text-align: justify;
+    padding: 10px 0 ;
+
+}
+.About h2{
+    color:  #144555;
+    font-family: "Parkinsans", 'Times New Roman', Times, sans-serif;
+    font-size: 30px;
+    padding-left:20px;
+    text-align: center;
+    padding: 10px 0 ;
+}
+hr{
+    margin-left: 350px;
+    margin-right: 350px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+   background-color:#14799b;
+}
+.FirstHome{
+    display: flex;
+    justify-content: center;
+    white-space: nowrap;
+}
+.FirstHome div{
+    width:900px;
+    height: 400px;
+    margin:15px;
+    line-height: 300px;
+    white-space: normal;
+    overflow: hidden;
+}
+#Photo1{
+    background-image: url(Images/x3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.SecondHome{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1%;
+    white-space: nowrap;
+}
+.SecondHome div{
+    width:435px;
+    height: 300px;
+    margin:15px;
+    display: inline-block;
+    white-space: normal;
+}
+#Photo2{
+    background-image: url(Images/x1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#Photo3{
+    background-image: url(Images/x2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.ThirdHome{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1%;
+    white-space: nowrap;
+}
+.ThirdHome div{
+    width:435px;
+    height: 400px;
+    margin:15px;
+    display: inline-block;
+    text-align: justify;
+    white-space: normal;
+    overflow: hidden;
+}
+#Text1 h2{
+    color: #144555;;
+    font-family: "Parkinsans", 'Times New Roman', Times, sans-serif;
+    font-size: 25px;
+    padding-left:20px;
+    text-align: center;
+    padding: 10px 0 ;
+}
+#Text1 p{
+    color:  #195366;
+    font-family: "Parkinsans", 'Times New Roman', Times, sans-serif;
+    font-size: 19px;
+    padding-left:20px;
+    text-align: justify;
+    padding: 10px 0 ;
+}
+#Photo4{
+    background-image: url(Images/x8.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center
+}
+
+
+#booking-form {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 350px;
+    max-height: 670px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#booking-form h1 {
+    text-align: center;
+    color: #287086;
+    margin-bottom: 20px;
+}
+
+#booking-form label {
+    font-size: 15px;
+    font-weight: bold;
+    color: #2f6677;;
+    display: block;
+    margin-bottom: 2px;
+}
+
+#booking-form input[type="text"],
+#booking-form input[type="email"],
+#booking-form input[type="tel"],
+#booking-form input[type="date"]
+{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 2px;
+    border: 1px solid#498ca0;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+#booking-form button {
+    padding: 9px 25px;
+    background-color: rgba(201, 115, 29, 0.81);
+    color:#c7dae2;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease 0.3s ease;
+}
+#booking-form button:hover{
+    background-color:rgba(43, 184, 254, 0.923);
+    transform: scale(1.2);
+}
+
+footer{
+    padding-top: 10px;
+    background-color:#174c5c;
+}
+Section.FooterUpper{
+    display: flex;
+    justify-content: center;
+}
+.FooterUpper img{
+    transition: all 0.3s ease 0s;
+    margin-left: 40px;
+    margin-right: 40px;
+    border-radius: 50%;
+    opacity: 0.7;
+}
+.FooterUpper img:hover{
+    transform: scale(1.2);
+    background-color:rgba(43, 184, 254, 0.923);
+    opacity: 1;
+}
+Section.FooterMiddle{
+    margin-top: 5px;
+    display: flex;
+}
+Section.FooterLower{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10%;
+    background-color:#0a1f25;
+}
+.FooterLower p{
+    
+    color:#c7dae2;
+    text-align: center;
+}
